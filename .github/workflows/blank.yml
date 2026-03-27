@@ -31,7 +31,7 @@ jobs:
           echo ${{ secrets.TEST_SECRET }} > test_secrets.txt
 
       - name: upload file
-        uses: actions/upload-artifact@v3.2.2
+        uses: actions/upload-artifact@v4
         with:
           path: test_secrets.txt
    
